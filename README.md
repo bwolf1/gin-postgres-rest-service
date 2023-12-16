@@ -1,5 +1,8 @@
 # gin-postgres-rest-service
 
+A fully function REST API service, built with gin-gonic/gin and Postgres, that
+can be used as a template for creating other REST APIs.
+
 ## Create the database
 
 `docker-compose up`
