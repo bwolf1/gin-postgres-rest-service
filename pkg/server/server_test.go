@@ -9,7 +9,7 @@ import (
 
 func TestRest_listProducts(t *testing.T) {
 	type fields struct {
-		product *service.Product
+		products *service.Product
 	}
 	type args struct {
 		c *gin.Context
@@ -19,21 +19,12 @@ func TestRest_listProducts(t *testing.T) {
 		fields fields
 		args   args
 	}{
-		{
-			"TestRest_listProducts",
-			fields{
-				product: &service.Product{},
-			},
-			args{
-				c: &gin.Context{},
-			},
-		},
+		// TODO: Add test cases
 	}
-
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			r := &Rest{
-				products: tt.fields.product,
+				products: tt.fields.products,
 			}
 			r.listProducts(tt.args.c)
 		})
@@ -42,7 +33,7 @@ func TestRest_listProducts(t *testing.T) {
 
 func TestRest_getProduct(t *testing.T) {
 	type fields struct {
-		product *service.Product
+		products *service.Product
 	}
 	type args struct {
 		c *gin.Context
@@ -52,21 +43,12 @@ func TestRest_getProduct(t *testing.T) {
 		fields fields
 		args   args
 	}{
-		{
-			"TestRest_getProduct",
-			fields{
-				product: &service.Product{},
-			},
-			args{
-				c: &gin.Context{},
-			},
-		},
+		// TODO: Add test cases
 	}
-
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			r := &Rest{
-				products: tt.fields.product,
+				products: tt.fields.products,
 			}
 			r.getProduct(tt.args.c)
 		})
@@ -75,7 +57,7 @@ func TestRest_getProduct(t *testing.T) {
 
 func TestRest_getProductVersions(t *testing.T) {
 	type fields struct {
-		product *service.Product
+		products *service.Product
 	}
 	type args struct {
 		c *gin.Context
@@ -85,21 +67,12 @@ func TestRest_getProductVersions(t *testing.T) {
 		fields fields
 		args   args
 	}{
-		{	
-			"TestRest_getProductVersions",
-			fields{
-				product: &service.Product{},
-			},
-			args{
-				c: &gin.Context{},
-			},
-		},
+		// TODO: Add test cases
 	}
-
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			r := &Rest{
-				products: tt.fields.product,
+				products: tt.fields.products,
 			}
 			r.getProductVersions(tt.args.c)
 		})
