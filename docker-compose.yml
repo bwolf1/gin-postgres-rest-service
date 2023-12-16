@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  postgres:
+    container_name: postgres
+    image: postgres:14-alpine
+    ports:
+      - 5432:5432
+    volumes:
+      - ~/apps/postgres:/var/lib/postgresql/data
+    environment:
+      # TODO: Create a new database user and grant it the needed permissions instead of using the `postgres` user
+      POSTGRES_USER: postgres
+      # TODO: Use a secret for this -- https://docs.docker.com/compose/use-secrets/
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_HOST_AUTH_METHOD: trust
+      POSTGRES_DB: catalog
+  # TODO: Add the REST service services, here, so that it can be deployed as container with the database
+  
