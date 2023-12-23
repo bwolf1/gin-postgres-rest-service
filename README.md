@@ -46,9 +46,9 @@ CREATE INDEX IF NOT EXISTS idx_product_id on product_version(product_id);
 
 INSERT INTO product (name, description, version_count)
 VALUES
-  ('product 1', 'service 1 does neat stuff', 1),
-  ('product 2', 'service 2 does more neat stuff', 1),
-  ('product 3', 'service 3 does even more neat stuff', 3);
+  ('product 1', 'product 1 does neat stuff', 1),
+  ('product 2', 'product 2 does more neat stuff', 1),
+  ('product 3', 'product 3 does even more neat stuff', 3);
 
 INSERT INTO product_version (product_id, version, description)
 VALUES
@@ -68,7 +68,7 @@ go build
 ## Run the service
 
 ```shell
-./service-catalog
+./gin-postgres-rest-service
 ```
 
 ## Run the tests
