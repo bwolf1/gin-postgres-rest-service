@@ -1,6 +1,6 @@
 # gin-postgres-rest-service
 
-A fully functional REST API service, built with [Go](https://go.dev/),
+REST API service, built with [Go](https://go.dev/),
 [gin-gonic/gin](https://gin-gonic.com/) and
 [Postgres](https://www.postgresql.org/), that can be used as a template for
 creating other REST APIs.
