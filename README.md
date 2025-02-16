@@ -1,13 +1,16 @@
 # gin-postgres-rest-service
 
-REST API service, built with [Go](https://go.dev/),
-[gin-gonic/gin](https://gin-gonic.com/) and
-[Postgres](https://www.postgresql.org/), that can be used as a template for
-creating other REST APIs.
+REST API service
+
+- [Go](https://go.dev/),
+- [gin-gonic/gin](https://gin-gonic.com/) and
+- [Postgres](https://www.postgresql.org/)
 
 ## Goals
 
-Started originally as a "take-home" assignment for a job interview.
+Started originally as a "take-home" assignment for a job interview. 
+
+Used as a template.
 
 ## Create the database
 
