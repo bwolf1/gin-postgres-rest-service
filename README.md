@@ -5,6 +5,10 @@ REST API service, built with [Go](https://go.dev/),
 [Postgres](https://www.postgresql.org/), that can be used as a template for
 creating other REST APIs.
 
+## Goals
+
+Started originally as a "take-home" assignment for a job interview.
+
 ## Create the database
 
 `docker-compose up`
@@ -15,11 +19,6 @@ creating other REST APIs.
 
 ## Create the tables and seed them with test data
 
-<!--
-TODO: Create migrations for these--maybe using
-[golang-migrate](https://github.com/golang-migrate/migrate) or something
-similar.
--->
 ```sql
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
