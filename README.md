@@ -8,8 +8,8 @@ REST API service
 
 ## Goals
 
-- Started originally as a "take-home" assignment for a job interview. 
-- Used as a template.
+- Started originally as a "take-home" assignment for a job interview
+- Have a template to use for something else
 
 ## Create the database
 
